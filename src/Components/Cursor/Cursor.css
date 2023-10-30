@@ -1,0 +1,11 @@
+/* Pikachu Cursor */
+.pokemon-cursor {
+  position: fixed;
+  width: 64px; /* Adjust the width and height as needed */
+  height: 64px;
+  /* background-image: url("../../../public/Pokemon.png"); Replace with the actual path to your image */
+  background-size: cover;
+  z-index: 9999; /* Ensure it's above other elements */
+  background-color: transparent;
+  background-position: center;
+}

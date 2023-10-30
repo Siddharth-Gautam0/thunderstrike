@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.logo {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  gap: 5rem;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-button {
+  position: relative;
+  background: transparent;
+  border: 0;
+  color: aliceblue;
+  font-family: "FutureOne";
+  font-size: 24px;
+  transition: all 0.6s;
+  border-radius: 10px;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 20px;
+  width: 96%;
+  background-color: transparent; /* Set your desired background color */
+  z-index: 100; /* Adjust the z-index as needed to layer it properly */
+}
+
+.transparent-button {
+  position: relative;
+  background: transparent;
+  border: 0;
+  color: aliceblue;
+  font-family: "FutureOne";
+  font-size: 24px;
+  transition: all 0.6s;
+  border-radius: 10px;
+}
+
+.transparent-button:hover {
+  background: rgb(0, 84, 122);
+  font-family: "FutureTwo";
+  font-size: 24px; /* Change to your desired font size */
+}
+
+.transparent-button:hover::after {
+  content: "";
+  position: absolute;
+  top: -2px; /* Adjust these values based on your desired border width */
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #ff0000, #3399ff, #9933ff);
+  border-radius: calc(
+    10px + 1px
+  ); /* Add your desired border width to the existing border radius */
+  z-index: -1;
+}

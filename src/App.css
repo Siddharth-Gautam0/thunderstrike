@@ -1,5 +1,10 @@
+/* * {
+  cursor: none;
+} */
+
 .App {
   text-align: center;
+  background: linear-gradient(180deg, #0a0e3a, #051428);
 }
 
 .App-logo {
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(45deg, #020d1e, #05203b, #020d1e);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +27,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 5);
 }
 
 .App-link {
@@ -35,4 +41,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "FutureOne";
+  src: url("./../public/fonts/futureFont/NuixyberPro-Regular-BF65393fc5268e0.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FutureTwo";
+  src: url("./../public/fonts/futureFontPro/NuixyberProConvert-Regular-BF653940188f03c.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "titles";
+  src: url("./../public/fonts/nameTitles/Anurati.otf") format("truetype");
 }
