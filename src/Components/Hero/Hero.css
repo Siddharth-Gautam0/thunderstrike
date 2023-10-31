@@ -35,4 +35,13 @@ video {
   color: white;
   z-index: 1;
   font-family: titles;
+  border: 1px;
+  border-color: aqua;
+
+}
+
+.text-align {
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
