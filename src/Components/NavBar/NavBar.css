@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   background: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 96%;
 }
 
 .logo {
@@ -30,10 +33,15 @@
 
 .navbar-container {
   position: fixed;
-  top: 20px;
-  width: 96%;
-  background-color: transparent; /* Set your desired background color */
-  z-index: 100; /* Adjust the z-index as needed to layer it properly */
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 100;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .transparent-button {

@@ -1,0 +1,25 @@
+/* Outer circle (black) */
+.circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Inner ring */
+  .circle .ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid;
+    border-radius: 50%;
+  }
+  
