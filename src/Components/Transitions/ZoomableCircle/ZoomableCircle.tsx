@@ -43,7 +43,7 @@ const handleScroll = (scrollDirection: string) => {
     }, []);
 
   // Calculate the circle size based on the scroll position
-  const circleSize = Math.min(scrollY / 7, 900);
+  const circleSize = Math.min(scrollY / 4, 900);
 
   useEffect(() => {
     const screenWidth = window.innerWidth;

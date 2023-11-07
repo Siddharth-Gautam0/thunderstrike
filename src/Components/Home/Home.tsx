@@ -8,6 +8,7 @@ import Navbar from '../NavBar/NavBar';
 import Hero from '../Hero/Hero';
 import ArticleCardOne from '../ArticleCards/ArticleCardOne/ArticleCardOne';
 import ZoomableCircle from '../Transitions/ZoomableCircle/ZoomableCircle';
+import Projects from '../Projects/Projects';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           null
         }
         {modulesToShow[selectedModuleIndex] == "articles" ? 
-          <ArticleCardOne></ArticleCardOne>
+          <Projects></Projects>
           :
           null
         }    

@@ -1,0 +1,10 @@
+.projects {
+    opacity: 0;
+    transition: opacity 5s;
+  }
+  
+  .projects.fade-in {
+    opacity: 1;
+  }
+  
+  

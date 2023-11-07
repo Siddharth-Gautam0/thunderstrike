@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './ArticleCardOne.css'
+import './Projects.css'
 
 
-function ArticleCardOne() {
+function Projects() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,11 +16,12 @@ function ArticleCardOne() {
     };
   }, []);
 
+
   return (
-    <div className={`article-card-one ${visible ? 'fade-in' : ''}`}>
+    <div className={`projects ${visible ? 'fade-in' : ''}`}>
       <div>LOREM IPSUM AHAHAHAHAH</div>
     </div>
   );
 }
 
-export default ArticleCardOne;
+export default Projects;
