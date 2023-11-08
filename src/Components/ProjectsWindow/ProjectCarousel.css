@@ -1,0 +1,34 @@
+.project-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, #001a34, #000000);
+    z-index: 50; /* Make sure it's above other content */
+    margin: 0 auto; /* Center horizontally */
+    display: flex; /* make it a flex container */
+    align-items: center; /* center the items vertically */
+    justify-content: center; /* center the items horizontally */
+  }
+
+  .project-card {
+    width: 80%; /* 80% of the parent's width */
+    height: 40vh; /* 40% of the viewport height */
+    border: 1px solid white; /* white border */
+    margin: auto; /* center the card horizontally */
+  }
+
+  .image3 {
+    height: 80%;
+    border: 1px solid white; /* white border */
+    width: 20%;
+    position: relative;
+    right: 5%;
+    top: 5%
+  }
+
+  
+
+  
