@@ -59,3 +59,8 @@
   font-family: "titles";
   src: url("./../public/fonts/nameTitles/Anurati.otf") format("truetype");
 }
+
+@font-face {
+  font-family: "ArticleHeading";
+  src: url("./../public/fonts/ArticleTitles/Marske.ttf") format("truetype");
+}
