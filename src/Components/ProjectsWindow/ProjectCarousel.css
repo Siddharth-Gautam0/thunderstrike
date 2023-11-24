@@ -11,23 +11,17 @@
     display: flex; /* make it a flex container */
     align-items: center; /* center the items vertically */
     justify-content: center; /* center the items horizontally */
+
   }
 
   .project-card {
-    width: 80%; /* 80% of the parent's width */
-    height: 40vh; /* 40% of the viewport height */
-    border: 1px solid white; /* white border */
-    margin: auto; /* center the card horizontally */
+    width: 70%; 
+    height: 50%; 
   }
 
-  .image3 {
-    height: 80%;
-    border: 1px solid white; /* white border */
-    width: 20%;
-    position: relative;
-    right: 5%;
-    top: 5%
-  }
+ 
+  
+
 
   
 

@@ -5,7 +5,7 @@
     left: 50%;
     border-radius: 50%;
     background-color: black;
-    z-index: 2;
+    z-index: 999;
     width: 0;
     height: 0;
     opacity: 0;
@@ -23,16 +23,20 @@
     border-radius: 50%;
   }
 
+  :root {
+    --circle2-z-index: 2;
+  }
+  
+
   .circle2 {
     position: fixed;
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    background-color: transparent; /* Set inside to transparent */
-    box-shadow: 0 0 0 2000px black ; /* Create a black shadow to fill outside */
-    border: 8px solid transparent; /* Adjust border width as needed */
-    z-index: 2;
-    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 2000px black; /* Create a black shadow to fill outside */
+    border: 8px solid white; /* Adjust border width as needed */
+    /* z-index: var(--circle2-z-index); */
+    border-color: rgb(255, 255, 255);
   }
   
   /* Inner ring */
@@ -42,7 +46,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 8px solid;
     border-radius: 50%;
   }
   

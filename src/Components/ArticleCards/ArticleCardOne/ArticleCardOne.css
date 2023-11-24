@@ -1,11 +1,69 @@
-  .article-card-one {
-    opacity: 0;
-    transition: opacity 5s;
+.bgImage { 
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow:hidden; 
+    transition: filter 0.5s;
+    cursor: pointer;
+}
+
+.fitImage { 
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  object-fit: cover;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+:root {
+   --shadow-color: yellow; 
   }
-  
-  .article-card-one.fade-in {
-    /* Set the final opacity to 1 */
-    opacity: 1;
-  }
+
+.imageHeading {
+  position: absolute;
+  width: 100%;
+  font-size: 84px;
+  font-family: ArticleHeading;
+  color: #fff; /* Text color */
+  text-shadow: 0 0 5px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 15px var(--shadow-color), 0 0 20px var(--shadow-color); /* Adjust the shadow sizes and colors for the desired effect */
+  animation: glow 1s ease-in-out infinite;
+  transition: opacity 0.5s;
+}
+
+.imageContainer {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0px;
+  left: 10%;
+}
+
+.hoveredImage {
+  filter: grayscale();
+}
+
+.hideText {
+  opacity: 0;
+}
+
+.showText {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.hideText2 {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.centerText {
+  position: absolute;
+  top: 40%;
+  margin: 20px;
+  color: white; /* Adjust text color as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  /* Add other necessary styles */
+}
   
   

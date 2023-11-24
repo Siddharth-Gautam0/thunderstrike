@@ -33,6 +33,10 @@ function App() {
     setSelectedModuleIndex((selectedModuleIndex + 1) % modulesToShow.length)
   }
 
+  const getPrevModule = () => {
+    setSelectedModuleIndex((selectedModuleIndex - 1) % modulesToShow.length)
+  }
+
   return (
       <header className="App-header">
         <div className="navbar-container">
@@ -45,7 +49,7 @@ function App() {
           null
         }
         {modulesToShow[selectedModuleIndex] == "articles" ? 
-          <Projects></Projects>
+          <Projects {...{onCircleWidthExceedsScreenWidth: getNextModule, onCircleWidthCollapses: getPrevModule}}></Projects>
           :
           null
         }    

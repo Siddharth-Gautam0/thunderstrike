@@ -10,10 +10,11 @@ export type ZoomableCircleProps = {
 const ZoomableCircle = (props?: ZoomableCircleProps) => {
 
 const [scrollY, setScrollY] = useState<number>(0)
+const [isScrollActive, setIsScrollActive] = useState<boolean>(false)
 
 const handleScroll = (scrollDirection: string) => {
-    // Your scroll handling logic here
-
+  if (!isScrollActive) return;
+  
     setScrollY((prevScrollY) => {
       if (scrollDirection === 'down') {
         return prevScrollY + 10;
@@ -33,13 +34,22 @@ const handleScroll = (scrollDirection: string) => {
         const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
         handleScroll(scrollDirection);
     };
-
     window.addEventListener('wheel', scrollHandler);
 
     // Remove the event listener when the component unmounts
     return () => {
         window.removeEventListener('wheel', scrollHandler);
     };
+    }, [isScrollActive]);
+
+    useEffect(() => {
+      const timeout = setTimeout(() => {
+        setIsScrollActive(true);
+      }, 300);
+  
+      return () => {
+        clearTimeout(timeout);
+      };
     }, []);
 
   // Calculate the circle size based on the scroll position
@@ -47,7 +57,7 @@ const handleScroll = (scrollDirection: string) => {
 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    if (circleSize * 11 > screenWidth) {
+    if (circleSize * 24 > screenWidth) {
         props?.onCircleWidthExceedsScreenWidth && props.onCircleWidthExceedsScreenWidth();
     }
     }, [circleSize]);

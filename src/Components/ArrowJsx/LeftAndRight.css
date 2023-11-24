@@ -1,0 +1,8 @@
+.leftContainer {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: -55px;
+    position: absolute;
+    transform: translate(0, -50%);
+}

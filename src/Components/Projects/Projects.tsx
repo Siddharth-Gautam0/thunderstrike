@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Projects.css';
 import ParticlesFloating from '../ParticlesFloating/ParticlesFloating';
 import ProjectCarousel from '../ProjectsWindow/ProjectCarousel';
+import ZoomInOutCircle, { ZoomInOutCircleProps } from '../Transitions/ZoomInOutCircle/ZoomInOutCircle';
 
-function BlackOverlay() {
-  return <div className="black-overlay" />;
-}
-
-function Projects() {
+function Projects(props?: ZoomInOutCircleProps) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -23,6 +20,7 @@ function Projects() {
 
   return (
     <div>
+    <ZoomInOutCircle {...props}></ZoomInOutCircle>
       <div className={`projects ${visible ? 'fade-in' : ''}`}>
         {/* TODO: Make this a carousel */}
         <ProjectCarousel /> 

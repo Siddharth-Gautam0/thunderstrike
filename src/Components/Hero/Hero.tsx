@@ -4,6 +4,7 @@ import loop6 from './loop6.mp4'
 import loop8 from './loop8.mp4'
 import TextTransition, { presets } from 'react-text-transition';
 import ZoomableCircle, { ZoomableCircleProps } from '../Transitions/ZoomableCircle/ZoomableCircle';
+import ZoomInOutCircle from '../Transitions/ZoomInOutCircle/ZoomInOutCircle';
 
 export type HeroProps = ZoomableCircleProps & {
   //other props
