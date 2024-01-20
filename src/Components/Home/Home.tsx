@@ -9,6 +9,7 @@ import Hero from '../Hero/Hero';
 import ArticleCardOne from '../ArticleCards/ArticleCardOne/ArticleCardOne';
 import ZoomableCircle from '../Transitions/ZoomableCircle/ZoomableCircle';
 import Projects from '../Projects/Projects';
+import Contact from '../ContactUsPage/ContactScreen';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
     };
   }, []);
 
-  const modulesToShow = ["hero", "articles",]
+  const modulesToShow = ["hero", "articles", "contact"]
 
   const [selectedModuleIndex, setSelectedModuleIndex] = useState<number>(0);
 
@@ -50,6 +51,11 @@ function App() {
         }
         {modulesToShow[selectedModuleIndex] == "articles" ? 
           <Projects {...{onCircleWidthExceedsScreenWidth: getNextModule, onCircleWidthCollapses: getPrevModule}}></Projects>
+          :
+          null
+        }
+        {modulesToShow[selectedModuleIndex] == "contact" ? 
+          <Contact {...{onCircleWidthExceedsScreenWidth: getNextModule, onCircleWidthCollapses: getPrevModule}}></Contact>
           :
           null
         }    

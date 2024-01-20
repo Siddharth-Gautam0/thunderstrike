@@ -1,0 +1,9 @@
+.projects {
+    opacity: 0;
+    transition: opacity 2s;
+    background: linear-gradient(135deg, #00051A, #000033, #05183B, #001a4e, #003366);
+  }
+  
+.projects.fade-in {
+    opacity: 1;
+}

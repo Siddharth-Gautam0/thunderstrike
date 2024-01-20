@@ -1,0 +1,62 @@
+.contact-form-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, #001a34, #000000);
+    z-index: 50; /* Make sure it's above other content */
+    margin: 0 auto; /* Center horizontally */
+    display: flex; /* make it a flex container */
+    align-items: center; /* center the items vertically */
+    justify-content: center; /* center the items horizontally */
+  }
+
+  .contact-form-card {
+    width: 70%; 
+    height: 50%; 
+    border: 1px solid;
+  }
+
+  .contact-image {
+    border-radius: 5px;
+  }
+
+  .contact-form-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .form-overlay {
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Additional styling for the text field, adjust as needed */
+  .text-field-overlay {
+    /* padding: 10px; */
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+  }
+
+  .textComp {
+    width: 70%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    font-size: 12;
+  }
+
+  .textTitle {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
